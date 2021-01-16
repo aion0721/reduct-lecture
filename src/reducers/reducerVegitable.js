@@ -1,13 +1,13 @@
-import { SELL_VEGETABLE} from './actionTypes'
+import { SELL_VEGETABLE } from './actionTypes'
 
-const reducerVegetable = (state[], action) => {
+const reducerVegitable = (state=[], action) => {
     switch(action.type){
-        case SELL_MEAT: return{
+        case SELL_VEGETABLE: return {
             ...state,
-            numOfVegetable: state.numOfVegetable =1
+            numOfVegitable: state.numOfVegitable -1
         }
         default: return state
     }
 }
 
-export default reducerVegetable
+export default recuderVegitable
